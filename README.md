@@ -1,30 +1,18 @@
-Jekyll Lazy Tweet Embedding Plugin
-====
+Jekyll (Slightly) Less Lazy Tweet Embedding Plugin
+==================================================
 
-Embedding your tweet into posts, by just copying tweet url.
+Simply embed tweets in Jekyll posts with liquid tags, which seems to work.
 
-## Description
-
-This is a converter plugin. So, the plugin converts all tweet urls in your posts written as `.html` or `.md`.
+## Notes
+This uses a liquid tag called `llazy_embedtweet`, if you come up with a better one please tell me. I was tired when I named it.
 
 ## Usage
+Put the `less_lazy_tweet_embed.rb` file in the `_plugins` folder of the Jekyll site (basically in the same folder that `_posts` is in),
+but make sure that plugins are enabled! ([so no using this with GitHub pages...](http://jekyllrb.com/docs/plugins/))
 
-After putting `lazy_tweet_embedding.rb` under the **_plugins** directory, Jekyll will automatically embed tweet card every time he generates your site.
+Then to embed a tweet, use the tags.
 
-First of all, make sure the tweet url:
-
-![1](/screenshots/1.png)
-
-Next, just copy and paste it in your awesome article:
-
-![2](/screenshots/2.png)
-
-Done! Jekyll converts the url automatically.
-
-![3](/screenshots/3.png)
-
-:tada: :tada: :tada: :tada: :tada:
+For example: `{% qembed_twitter https://twitter.com/skyem123/status/685987008553050113 %}`, will embed the tweet https://twitter.com/skyem123/status/685987008553050113 inside the post.
 
 ## Licence
-
-MIT
+This is under the ISC (similar to the 2-clause BSD) licence, but is based off of code under the MIT licence, look in `LICENCE.txt` for details.
