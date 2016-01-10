@@ -12,7 +12,7 @@ but make sure that plugins are enabled! ([so no using this with GitHub pages...]
 
 Then to embed a tweet, use the tags.
 
-For example: `{% qembed_twitter https://twitter.com/skyem123/status/685987008553050113 %}`, will embed the tweet https://twitter.com/skyem123/status/685987008553050113 inside the post.
+For example: `{% llazy_embedtweet https://twitter.com/skyem123/status/685987008553050113 %}`, will embed the tweet https://twitter.com/skyem123/status/685987008553050113 inside the post.
 
 ## Licence
 This is under the ISC (similar to the 2-clause BSD) licence, but is based off of code under the MIT licence, look in `LICENCE.txt` for details.
